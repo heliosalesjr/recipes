@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { useFetch } from '../../hooks/useFetch'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom' //that was useHistory in v5, now it's useNavigate
 
 // styles
 import './Create.css'
