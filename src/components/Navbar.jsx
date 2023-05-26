@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-import React from 'react'
-import SearchBar from './SearchBar';
+import React from 'react';
+import Searchbar from './Searchbar';
 
 function Navbar() {
   return (
@@ -11,7 +11,7 @@ function Navbar() {
             <Link to="/" className="brand">
                 <h1>Cooking Stars</h1>
             </Link>
-            <SearchBar />
+            <Searchbar />
             <Link to="/create">Create Recipe</Link>
         </nav>    
     </div>

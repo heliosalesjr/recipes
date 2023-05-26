@@ -1,9 +1,15 @@
 import './RecipeList.css';
 import { Link } from 'react-router-dom';
 
-import React from 'react'
 
 function RecipeList( {recipes} ) {
+
+  if (recipes.length === 0) {
+  
+    return <div className='error'>Try looking for something else</div>
+
+  }
+
   return (
     <div className='recipe-list'>
         {recipes.map(recipe => (
